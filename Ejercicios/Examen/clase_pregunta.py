@@ -1,3 +1,15 @@
+
+
+"""
+Bueno esta clase no tiene mucho definido.
+Los atributos los trabajamos privados y hacemos uso de gets para poder acceder a ellos.
+
+
+El problema de definir así la lista de opciones y la opción correcta es que nos limita
+a mostrar siempre en el mismo orden las respuestas, y a tener que deordenar manualmente las respuestas al
+momento de crearlas.
+
+"""
 class Pregunta:
     """
     Clase que representa una pregunta de un examen

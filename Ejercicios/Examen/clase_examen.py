@@ -28,6 +28,15 @@ class Examen:
         None
         
         """
+
+        """
+        Consideren que en sí, el examen simplemente es la instancia de una serie de preguntas y respuestas.
+        Y una forma de evaluarse.
+
+        La parte de aplicarlo, o de mostrarlo al usuario lo dejamos como un script usando métodos de aquí.
+
+        Hay que cambiarlo de modo a que en la interfaz tenga los métodos necesarios para ir creándolo.
+        """
         
         print("Hola! Bienvenid@ al examen de Programación")
         nombre = input("Por favor, ingresa tu nombre completo: ")
@@ -41,6 +50,11 @@ class Examen:
         for i, pregunta in enumerate(preguntas_aleatorias): 
             print(f"\nPregunta {i + 1}:")
             #manda a llamar a la función y suma 0 o 1 al puntaje.
+
+            """
+            Primero muestren las preguntas, al final que exista un método para calificar.
+            Todo esto se va a tener que editar ya que en la interfaz no va ser posible hacerlo de esta forma.
+            """
             puntaje += self.mostrar_pregunta(pregunta)
 
             if puntaje > len(respuestas_correctas):
@@ -62,6 +76,9 @@ class Examen:
         pregunta (Pregunta): La pregunta a mostrar
         Returns:
         int: 1 si la respuesta es correcta, 0 si es incorrecta
+        """
+        """
+        Con métodos get. Así puede ser confuso porque es el mismo identificador
         """
         print(pregunta.pregunta)
         for i, opcion in enumerate(pregunta.opciones):
